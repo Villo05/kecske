@@ -1,17 +1,16 @@
-window.addEventListener("click", function(){
-    kecskeElem();
-    kaposztaElem();
-    farkasElem();
+pElem[0].addEventListener("click", function(){
+
 })
 
-function kecskeElem(){
 
-}
 
-function kaposztaElem(){
 
-}
 
-function farkasElem(){
-
+function keretFelrak(){
+    kepElem.addEventListener ("mouseover", function (){
+        keckeElem.classList.add("keret");
+    });
+    kepElem.addEventListener("mouseout", function(){
+        kepElem.classList.remove("keret");
+    })
 }
