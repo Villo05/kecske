@@ -14,6 +14,10 @@ main {
 
 p img {
     width: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
 }
 
 #csonak {
@@ -30,6 +34,7 @@ article{
     margin: 10px;
 
 }
+
 
 #bal{
     grid-area: b;
@@ -57,12 +62,18 @@ aside{
 
 }
 
+
+
 footer{
     grid-area: f;
     border: 1px solid rgba(128, 128, 128, 0.747);
     padding: 10px;
     margin: 10px;
+}
 
+footer p {
+    background-color: rgba(59, 176, 243, 0.678);
+    font-size: 20px;
 }
 
 form{
@@ -72,5 +83,13 @@ form{
 .keret{
     border: 2px solid red;
     padding: 5px;
+    cursor: grab;
 }
 
+.eltunt{
+    display: none;
+}
+
+article div{
+    
+}
